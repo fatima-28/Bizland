@@ -1,0 +1,195 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+          integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="~/assets/css/main.css">
+    <title>BizLand</title>
+</head>
+
+
+<body>
+    <!-- header start -->
+    <header id="header">
+        <div class="header-part ">
+            <div class="first-header">
+
+                <p>
+                    <i class="fa-solid fa-envelope icon-header"></i>
+                    contact@com/example
+                </p>
+                <p>
+                    <i class="fa-solid fa-mobile icon-header">
+
+                    </i>+994 732 3444
+                </p>
+            </div>
+            <div class="second-header">
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter twitter"></i>
+
+            </div>
+        </div>
+        <div class="second-header-part">
+            <div class="logo">
+                <p>BizLand</p>
+            </div>
+            <div class="pages">
+                <div class="pages-item">
+                    <p class="line">Home</p>
+                </div>
+                <div class="pages-item">
+                    <p class="line">About</p>
+                </div>
+                <div class="pages-item">
+                    <p class="line">SErvices</p>
+                </div>
+                <div class="pages-item">
+                    <p class="line">Portfolio</p>
+                </div>
+                <div class="pages-item">
+                    <p class="line">Team</p>
+                </div>
+                <div class="pages-item dropdown-item">
+                    <p class="line">Dropdown <i class="fa-solid fa-angle-down"></i></p>
+                    <div class="dropdown-inner">
+                        <div class="dropdown-box">
+                            <ul>
+                                <li>
+                                    <p class="dropdown-text">Dropdown 1</p>
+                                </li>
+                                <li>
+                                    <p class="dropdown-text">Dropdown 1</p>
+                                </li>
+                                <li>
+                                    <p class="dropdown-text">Dropdown 1</p>
+                                </li>
+                                <li>
+                                    <p class="dropdown-text">Dropdown 1</p>
+                                </li>
+                                <li>
+                                    <p class="dropdown-text">Dropdown 1</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="pages-item">
+                    <p class="line">Contacts</p>
+
+                </div>
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                        <i class="fa-solid fa-xmark cross" style="color: rgb(0, 0, 0);"></i>
+                    </a>
+                    <a href="#" class="link">About</a>
+                    <a href="#" class="link">Services</a>
+                    <a href="#" class="link">Clients</a>
+                    <a href="#" class="link">Contact</a>
+                    <a href="#" class="link">Portfolio</a>
+                    <a href="#" class="link">DropDown</a>
+                    <a href="#" class="link">Services</a>
+                </div>
+
+                <div class="hamburger" onclick="openNav()"><i class="fa-solid fa-bars "></i></div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+    @RenderBody()
+    <footer>
+        <div class="footer-part join-us">
+            <p class="join-us-title">Join Our Newsletter</p>
+            <p class="join-us-text">Tamen quem nulla quae legam multos aute sint <br>culpa legam noster magna</p>
+            <div class="footer-main">
+                <input type="text">
+                <button class="subscribe">Subscribe</button>
+            </div>
+        </div>
+        <div class="footer-part footer-info">
+            <div class="footer-info-item">
+                <p class="title">BizLand</p>
+                <p>
+                    A108 Adam Street
+                    New York, NY 535022
+                    United States
+                </p>
+                <p>Phone: +1 5589 55488 55</p>
+                <p>Email: info@example.com</p>
+            </div>
+            <div class="footer-info-item">
+                <p class="title">Useful Links</p>
+                <p>
+                    <i class="fa-solid fa-chevron-right"></i>Home
+                </p>
+                <p><i class="fa-solid fa-chevron-right"></i>About</p>
+                <p><i class="fa-solid fa-chevron-right"></i>Services</p>
+                <p>
+                    <i class="fa-solid fa-chevron-right"></i>Home
+                </p>
+                <p><i class="fa-solid fa-chevron-right"></i>About</p>
+                <p><i class="fa-solid fa-chevron-right"></i>Services</p>
+            </div>
+            <div class="footer-info-item">
+                <p class="title">Our Services</p>
+                <p>
+                    Web Design
+                </p>
+                <p>Web Dewelopmedt</p>
+                <p>SQL developer</p>
+                <p>
+                    CEO
+                </p>
+                <p>Officer</p>
+
+            </div>
+            <div class="footer-info-item">
+                <p class="title">Our Social Networks</p>
+                <p>
+                    Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies
+                </p>
+                <div class="social-media">
+                    <div class="social-media-item"><i class="fa-brands fa-facebook-f"></i></div>
+                    <div class="social-media-item"><i class="fa-brands fa-instagram"></i></div>
+                    <div class="social-media-item"><i class="fa-brands fa-skype"></i></div>
+                    <div class="social-media-item"><i class="fa-brands fa-linkedin"></i></div>
+                    <div class="social-media-item"><i class="fa-brands fa-twitter"></i></div>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer-part last-footer">
+            <div>
+                <p>© Copyright BizLand. All Rights Reserved</p>
+            </div>
+            <div>
+                <p>Designed By Bootstrap made</p>
+            </div>
+            <a href="#header">
+                <div class="arrow-up"><i class="fa-solid fa-arrow-up"></i></div>
+            </a>
+        </div>
+
+    </footer>
+
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+
+    </script>
+</body>
+
+</html>

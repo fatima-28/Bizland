@@ -1,0 +1,140 @@
+﻿@using Bizland.Models
+@using Bizland.ViewModels
+@model HomeViewModel
+@{
+    ViewData["Title"] = "Index";
+}
+
+<!-- main start -->
+<main>
+    <!-- welclome section start -->
+    <section id="welclome">
+
+        <div class="welcome-secton-box">
+            <div class="inner-box">
+                <h2 class="first-h2 welcome-secton-box-item">Welcome to</h2>
+                <h2 class="inner-h2 welcome-secton-box-item">BizLand</h2>
+                <p class="description welcome-secton-box-item">
+                    We are team of talented designers making <br>websites
+                    with Bootstrap
+                </p>
+                <button class="start welcome-secton-box-item">Get Started</button>
+                <div class="video-box">
+                    <a href="www" class="video">
+                        <i class="fa-solid fa-play"></i> Watch Video</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- welclome section end -->
+    <!-- find about more section start -->
+    <secion id="find-about-more">
+        <div class="find-about-more">
+            <div class="about-more-items ">
+                <div class="about-text">
+                    <div class="about">
+                        <p>About</p>
+                    </div>
+                    <h3 class="find">Find Out More</h3>
+                    <h3 class="About-US">About Us</h3>
+                    <div class="about-us-box">
+                        <p class="about-us-context">
+                            Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at
+                            voluptas atque vitae autem.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="about-more-items about-us-photo">
+                <div class="about-image">
+                    <img src="https://bootstrapmade.com/demo/templates/BizLand/assets/img/about.jpg"
+                         alt="our team ">
+                </div>
+                <div class="about-image">
+                    <h4>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h4>
+                    <p class="summary">
+                        <i>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna
+                            aliqua.
+                        </i>
+                    </p>
+
+
+                    <div class="logo-summary">
+                        <div class="logo-part"><i class="fa-solid fa-house"></i></div>
+                        <div class="summary-part">
+                            <h5>Ullamco laboris nisi ut aliquip consequat</h5>
+                            <p class="summary-inner">
+                                Magni facilis facilis repellendus cum excepturi quaerat
+                                praesentium libre trade
+                            </p>
+                        </div>
+                    </div>
+                    <div class="logo-summary">
+                        <div class="logo-part"><i class="fa-solid fa-image"></i></div>
+                        <div class="summary-part">
+                            <h5>Ullamco laboris nisi ut aliquip consequat</h5>
+                            <p class="summary-inner">
+                                Magni facilis facilis repellendus cum excepturi quaerat
+                                praesentium libre trade
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="description-about">
+                        <p>
+                            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                            rephenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia
+                            deserunt mollit anim id est laborum
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </secion>
+    <!-- find about more section end -->
+    <!-- team section start -->
+    <section id="team">
+        <div class="team">
+            <div class="team-summary">
+                <div class="about-text">
+                    <div class="about">
+                        <p>Team</p>
+                    </div>
+                    <h3 class="find">Our Hardworking</h3>
+                    <h3 class="About-US">Team</h3>
+                    <div class="about-us-box">
+                        <p class="about-us-context">
+                            Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at
+                            voluptas atque vitae autem.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="team-summary cards">
+
+                @foreach (var card in Model.Cards)
+                {
+                    <!-- team single item start -->
+                    <div class="team-cards">
+                        <img src="@card.Image"
+                             alt="team mate">
+                        <p class="name-team-worker">@card.Name</p>
+                        <p class="job">@card.Job</p>
+                    </div>
+                    <!-- team single item end -->
+
+                }
+
+            </div>
+        </div>
+    </section>
+    <!-- team section start -->
+</main>
+<!-- main end -->
